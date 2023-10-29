@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gmailCard"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="left"
+        android:padding="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/gmailImage"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="30dp"
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/meo1"
+                android:id="@+id/gmailImageComponent"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_toEndOf="@+id/gmailImage"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello world"
+                android:id="@+id/title"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:id="@+id/gmailSummary"
+                android:text="We are moving the launch of checkout extensibility on the thank you and order status pages from October 24, 2023 to November 7, 2023.
+While we expected to release today, we have seen a higher than expected volume of applications intending to launch with us. As a result, we are extending the time to launch to support as many high quality apps as possible. This will not change any previously communicated deprecation dates and turn-off timelines.
+Additionally, starting tomorrow the order status page is getting a new look with updated visual treatment that is consistent with new customer accounts. Learn more from the changelog."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:id="@+id/gmailContent"
+                android:text="We are moving the launch of checkout extensibility on the thank you and order status pages from October 24, 2023 to November 7, 2023.
+While we expected to release today, we have seen a higher than expected volume of applications intending to launch with us. As a result, we are extending the time to launch to support as many high quality apps as possible. This will not change any previously communicated deprecation dates and turn-off timelines.
+Additionally, starting tomorrow the order status page is getting a new look with updated visual treatment that is consistent with new customer accounts. Learn more from the changelog."/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:46AM"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:outlineSpotShadowColor="@color/white"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_star_outline_24"
+                app:tint="#555555"
+                />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
